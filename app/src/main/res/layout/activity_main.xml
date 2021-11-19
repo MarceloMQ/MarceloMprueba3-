@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    android:id="@+id/actualizarActivity"
+    android:background="@drawable/fondo3"
+    >
+
+    <TextView
+        android:id="@+id/txttitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EF5045"
+        android:gravity="center"
+        android:text="Lista"
+        android:textSize="40dp" />
+
+
+    <ListView
+        android:id="@+id/idListViewSensores"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btnAgregarSensor"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/fondo3">
+
+
+    </ListView>
+
+    <Button
+        android:id="@+id/btnAgregarSensor"
+        android:layout_width="116dp"
+        android:layout_height="64dp"
+        android:layout_above="@+id/btnMap"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="-66dp"
+        android:layout_toStartOf="@+id/btnMap"
+        android:background="#4DFF00"
+        android:text=" Sensores"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnMap"
+        android:layout_width="127dp"
+        android:layout_height="63dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="54dp"
+        android:layout_marginBottom="11dp"
+        android:background="#FF2020"
+        android:text="Mapa"
+        tools:ignore="TextContrastCheck" />
+
+</RelativeLayout>
