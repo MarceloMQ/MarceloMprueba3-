@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btnAgregarSensor:
-                Intent agregarSensorIntent = new Intent(this, ingresarSensor.class);
-                startActivity(agregarSensorIntent);
+                Intent agregar_sensorIntent = new Intent(this, ingresarSensor.class);
+                startActivity(agregar_sensorIntent);
                 break;
 
             case R.id.btnMap:
